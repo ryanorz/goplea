@@ -2,7 +2,7 @@ package ch5
 
 import "golang.org/x/net/html"
 
-// visit appends to links each link found in n and returns the result.
+// Visit appends to links each link found in n and returns the result.
 func Visit(links []string, n *html.Node) []string {
 	if n == nil {
 		return links

@@ -2,6 +2,7 @@ package ch5
 
 import "golang.org/x/net/html"
 
+// ElementCount ...
 func ElementCount(n *html.Node, m map[string]int) map[string]int {
 	if n == nil {
 		return m

@@ -1,12 +1,13 @@
 package ch5
 
 import (
-	"golang.org/x/net/html"
 	"fmt"
 	"strings"
+
+	"golang.org/x/net/html"
 )
 
-// visit appends to links each link found in n and returns the result.
+// PrintText ...
 func PrintText(n *html.Node) {
 	if n == nil || n.Data == "script" || n.Data == "style" {
 		return
