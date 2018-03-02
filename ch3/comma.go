@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-// CommaRecursive xxx 12345 -> 12,345
+// AddCommaRecursive xxx 12345 -> 12,345
 func AddCommaRecursive(s string) string {
 	n := len(s)
 	if n <= 3 {
@@ -14,7 +14,7 @@ func AddCommaRecursive(s string) string {
 	return AddCommaRecursive(s[:n-3]) + "," + s[n-3:]
 }
 
-// CommaBytesBufferAdvancedVersion support +/-, float numbers
+// AddCommaBytesBufferAdvancedVersion support +/-, float numbers
 func AddCommaBytesBufferAdvancedVersion(s string) string {
 	var buf bytes.Buffer
 	if strings.HasPrefix(s, "+") || strings.HasPrefix(s, "-") {
